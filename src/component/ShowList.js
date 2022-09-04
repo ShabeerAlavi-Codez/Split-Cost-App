@@ -1,5 +1,5 @@
 import React from 'react'
-import {  faXmark, faTrashCan} from "@fortawesome/free-solid-svg-icons";
+import { faTrashCan} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import './ShowList.css'
 const ShowList = (props) => {
