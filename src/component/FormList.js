@@ -47,6 +47,10 @@ const FormList = () => {
         removePerson.current = id
         
     }
+    const clearAll = () =>{
+        setListname([])
+        setAllList([])
+    }
     const delName = () =>{ 
         setAllList(current => current.filter(list=>{
             return list.payerId !== removePerson.current
@@ -124,7 +128,7 @@ const FormList = () => {
                         
                         : <p>You haven't added any your friends yet!</p>}
                         {(listName.length !== 0) && 
-                        <li><label className='payeritem clearbtn' onClick={()=>setListname([])}>Clear All</label> </li>}
+                        <li><label className='payeritem clearbtn' onClick={()=>clearAll()}>Clear All</label> </li>}
                         </ul>
                     </div>
                     

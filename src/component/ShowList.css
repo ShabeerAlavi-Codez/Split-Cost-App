@@ -1,11 +1,11 @@
 
-.wrap-alllist table.head-table{
+.wrap-alllist .head-table{
     
     table-layout: fixed;
     width: 100%;
     white-space: nowrap; 
     border-collapse: collapse;
-    
+    box-shadow: 5px -3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .wrap-alllist .head-table thead tr{
@@ -52,12 +52,12 @@
 }
 .wrapTotal{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .total{
     margin-top: 10px;
-    
+    box-shadow: 5px -3px 10px rgba(0, 0, 0, 0.1);
     background-color: #444773;
     width: 150px;
     text-align: center;

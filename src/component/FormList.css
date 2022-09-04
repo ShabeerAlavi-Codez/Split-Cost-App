@@ -104,7 +104,7 @@
     border: 1px solid transparent;
     color: #FFF;
     background: transparent;
- 
+
 }
 
 .form-list label .wrap-input .btn-add{
@@ -119,16 +119,19 @@
     transform: translateY(2px);
 }
 .form-list label .wrap-input .btn-add:focus{
-    /* background: rgba(255,255,255,0.4); */
     outline: none;
 }
 .form-list label .wrap-input .wrap-addname-input .add-icon{
     color: white;
     font-size: 17px;
 }
+input[type=number] {
+    -moz-appearance:textfield;
+}
 
 .form-list label input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
+    margin: 0;
 }
 .form-list label ul{
     margin: 0;
@@ -220,6 +223,7 @@
     height: 100vh;
     padding: 50px 50px;
     overflow-y: scroll;
+    box-shadow: 5px -3px 30px rgba(0, 0, 0, 0.1);
 }
 .wrap-right nav{
     display: flex;
@@ -239,18 +243,18 @@
     text-decoration: none;
     border-bottom: 5px solid #444773;
     transition: 0.1s;
-    box-shadow: 5px -3px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 5px -4px 10px rgba(0, 0, 0, 0.15);
 }
 .wrap-right nav .link:last-of-type{
     border-radius: 0 10px 10px 0;
 }
 .wrap-right nav .link:first-of-type.active{
-    box-shadow: inset -5px 0px 10px rgba(0, 0, 0, 0.2);
-    border-bottom: 2px solid #444773;
+    box-shadow: inset -1px -3px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 0px solid #444773;
 }
 .wrap-right nav .link:last-of-type.active{
-    box-shadow: inset 5px 0px 10px rgba(0, 0, 0, 0.2);
-    border-bottom: 2px solid #444773;
+    box-shadow: inset 5px -3px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 0px solid #444773;
     
 }
 
