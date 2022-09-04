@@ -1,0 +1,84 @@
+.confirmPopup{
+    border: 1px solid #232323;
+    /* border-radius: 10px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0 , 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.confirmPopup .wrapPopup{
+    background: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    width: 520px;
+}
+
+.confirmPopup .wrapPopup .wrap-icon{
+    width: 100%;
+    font-size: 30px;
+    text-align: end;
+    margin-bottom: 15px;
+}
+
+.confirmPopup .wrapPopup .wrap-icon .x-icon{
+    cursor: pointer; 
+    margin-left: 180px;
+    
+}
+.confirmPopup .wrapPopup .wrap-icon .warning-icon{
+    color: #EADC5F;
+    font-size: 40px;
+
+}
+.confirmPopup .wrapPopup .message h2{
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.confirmPopup .wrapPopup .message p{
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+.confirmPopup .wrapPopup .wrap-btn{
+    display: flex;
+   
+}
+
+.confirmPopup .wrapPopup .wrap-btn button{
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #444773 -13.75%, #295270 105.49%, #295270 105.5%);
+    transition: 1s;
+}
+.confirmPopup .wrapPopup .wrap-btn button:hover{
+    background: linear-gradient(270deg, #444773 -13.75%, #295270 105.49%, #295270 105.5%);
+    opacity: 90%;
+}
+.confirmPopup .wrapPopup .wrap-btn button:last-child{
+    margin-right: 0;
+    color: black;
+    background: rgb(219, 219, 219);
+}
+.confirmPopup .wrapPopup .wrap-btn button:last-child:hover{
+    background: rgb(189, 189, 189);
+}
+

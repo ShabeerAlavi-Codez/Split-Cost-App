@@ -1,0 +1,265 @@
+
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* background: transparent;  */
+  
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(139, 139, 139); ; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(119, 119, 119); 
+  }
+
+
+.form-Component{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.container-form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+.container-form h1{
+    color: #FFF;
+    margin-bottom: 30px;
+}
+.container-form .form-list{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 290px;
+}
+
+.form-list label{
+    /* width: 100%; */
+    margin-bottom: 15px;
+}
+
+.form-list label p{
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.form-list label>input{
+    width: 280px;
+    padding: 10px 15px;
+    font-size: 17px;
+    outline: none;
+    color: #FFF;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: transparent;
+    transition: 0.2s;
+}
+
+.form-list label input:focus{
+    background: white;
+    color: #3E4A73;
+
+}
+.form-list label input:hover{
+    opacity: 0.9;
+}
+.form-list label input::placeholder{
+    color: #b4b2b2c5;
+}
+
+.form-list label .wrap-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    outline: none;
+    border: none;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    width: 280px;
+    padding-bottom:10px ;
+}
+
+.form-list label .wrap-input .wrap-addname-input .fill-name{
+    padding: 10px 15px; 
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid transparent;
+    color: #FFF;
+    background: transparent;
+ 
+}
+
+.form-list label .wrap-input .btn-add{
+    border: none;
+    padding: 2px 5px;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+}
+.form-list label .wrap-input .btn-add:active{
+    transform: translateY(2px);
+}
+.form-list label .wrap-input .btn-add:focus{
+    /* background: rgba(255,255,255,0.4); */
+    outline: none;
+}
+.form-list label .wrap-input .wrap-addname-input .add-icon{
+    color: white;
+    font-size: 17px;
+}
+
+.form-list label input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.form-list label ul{
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px 5px;
+    max-height: 220px;
+    overflow-y:scroll;
+}
+.form-list label ul li{
+    list-style: none;
+}
+.form-list label .payeritem{
+    font-size: 14px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    padding: 5px 8px;
+    cursor: pointer;
+
+}
+.form-list label .payeritem .x-icon{
+    margin-left: 10px;
+}
+.form-list label ul li input[type=radio]{
+    display: none;
+}
+.form-list label ul li input[type=radio]:hover +.payeritem{
+    opacity: 0.8;
+}
+.form-list label ul li input[type=radio]:checked + .payeritem{
+    background: #FFF;
+    color: #3E4A73;
+}
+
+.form-list label ul p{
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.clearbtn{
+    font-size: 14px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.clearbtn:hover{
+    background: #FFF;
+    color: #444773;
+}
+.btn-Addlist{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    width: 280px;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.2s;
+    border: 1px solid #FFF;
+}
+
+.btn-Addlist:hover{
+    color: #3E4A73;
+    background: #FFF;
+}
+
+
+.btn-Addlist:disabled{
+    color: white;
+    background: gray;
+    opacity: 0.2;
+    cursor:auto;
+}
+
+.wrap-right{
+    background: #FFF;
+    border-radius: 40px 0 0 40px;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 50px;
+    overflow-y: scroll;
+}
+.wrap-right nav{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.wrap-right nav .link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background: #E2E2E4;
+    border-radius: 10px 0 0 10px ;
+    padding: 13px 30px;
+    min-width: 150px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 5px solid #444773;
+    transition: 0.1s;
+    box-shadow: 5px -3px 10px rgba(0, 0, 0, 0.15);
+}
+.wrap-right nav .link:last-of-type{
+    border-radius: 0 10px 10px 0;
+}
+.wrap-right nav .link:first-of-type.active{
+    box-shadow: inset -5px 0px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #444773;
+}
+.wrap-right nav .link:last-of-type.active{
+    box-shadow: inset 5px 0px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #444773;
+    
+}
+
+.wrap-right nav .nav-item:hover{
+    opacity: 95%;
+}
+
+.wrap-contain{
+    padding: 0;
+    /* overflow: scroll; */
+}
+

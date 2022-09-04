@@ -1,0 +1,130 @@
+.wrap-payerList{
+    /* border: 1px solid #232323; */
+    width: 100%;
+    /* min-width: 700px; */
+    max-height: 100%;
+    
+}
+
+.wrap-payerList header{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 35px;
+    background: #F5F5F5;
+    height: 120px;
+    max-width: 500px;
+    min-width: 400px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+}
+.wrap-payerList header .wrap{
+    text-align: center;
+}
+.wrap-payerList header .wrap .headline{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.wrap-payerList header .wrap .number{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*--------- table section --------------*/
+
+.wrap-payerList .head-table{
+    table-layout: fixed;
+    width: 100%;
+    min-width: 550px;
+    white-space: nowrap; 
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow-y: scroll;
+}
+
+.wrap-payerList .head-table thead tr{
+    background-color: #444773;
+    color: #ffffff;
+    text-align: left;
+    border-radius: 10px;
+}   
+
+.wrap-payerList .head-table th,
+.wrap-payerList .head-table td {
+    padding: 12px 15px;
+}
+.head-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+    transition: 0.1s;
+}
+
+.head-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.head-table tbody tr:hover{
+    background-color: #f1effc86;
+}
+
+.head-table tbody tr:last-of-type{
+    border-bottom: 2px solid #444773;
+}
+.wrap-payerList td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.col-mem{
+    width: 30%;
+}
+.col-paid{
+    width: 25%;
+}
+.col-status{
+    width: 20%;
+}
+.col-dept{
+    width: 20%;
+    
+}
+.wrap-status{
+    border-radius: 15px;
+    padding: 2px;
+    width: 80px;
+    text-align: center;
+}
+
+.minus{
+    background: #BE6C6C;
+}
+.plus{
+    background: #6CBE83;
+}
+.free{
+    background: #444773;
+    color: #dddddd;
+}
+.plusnum{
+    font-weight: bolder;
+    color:#6CBE83
+}
+.minusnum{
+    font-weight: bolder;
+    color:#BE6C6C
+}
+.freenum{
+    font-weight: bolder;
+    color:#000
+}
+
+.nofriend{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
