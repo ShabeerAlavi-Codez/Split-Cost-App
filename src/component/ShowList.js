@@ -11,6 +11,7 @@ const ShowList = (props) => {
     for (let list of lists){Total += list.amount}
    
   return (
+    <>
     <div className='wrap-alllist'>
        <table className='head-table'>
         <thead>
@@ -32,11 +33,12 @@ const ShowList = (props) => {
                 )}
         </tbody>
        </table>
-       <div className='wrapTotal'>
-            <p className='total'>Total <span style={{fontWeight:"500"}}>{Total}</span></p>
-       </div>
-       
     </div>
+    <div className='wrapTotal'>
+        <p className='total'>Total <span style={{fontWeight:"500"}}>{Total}</span></p>
+    </div>
+    </>
+    
   )
 }
 

@@ -1,4 +1,8 @@
 
+.wrap-alllist{
+    position: relative;
+    
+}
 .wrap-alllist .head-table{
     
     table-layout: fixed;
@@ -13,13 +17,12 @@
     color: #ffffff;
     text-align: left;
     border-radius: 10px;
-    font-size: 1.3vw;
+    /* font-size: 1.3vw; */
 }
 
 .wrap-alllist .head-table th,
 .wrap-alllist .head-table td {
     padding: 12px 15px;
-    font-size: 1.3vw;
 }
 
 .head-table tbody tr{
@@ -52,6 +55,7 @@
     
 }
 .wrapTotal{
+    width: 100%;
     display: flex;
     justify-content: flex-end;
 }
@@ -60,12 +64,38 @@
     margin-top: 10px;
     box-shadow: 5px -3px 10px rgba(0, 0, 0, 0.1);
     background-color: #444773;
-    width: 150px;
+    min-width: 80px;
     text-align: center;
     color: #FFF;
     font-weight: bolder;
     font-size: 20px;
     border-radius: 10px;
-    padding: 15px 30px;
+    padding: 10px 20px;
+
 }
 
+@media screen and (max-width:500px){
+    .wrap-alllist {
+        overflow-x: scroll;
+    }
+    .wrap-alllist .head-table th,
+    .wrap-alllist .head-table td{
+        font-size: 13px;
+    }
+    .col-list{
+        width: 80px;
+    }
+    .col-mem{
+        width: 50px;
+    }
+    .col-amount{
+        width: 50px;
+    }
+    .col-remove{
+        width: 50px;
+        
+    }
+    .total{
+        font-size: 15px;
+    }
+}

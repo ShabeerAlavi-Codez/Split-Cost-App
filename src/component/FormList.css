@@ -3,7 +3,7 @@
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
-    height: 10px;
+    height: 5px;
   }
   
   /* Track */
@@ -14,7 +14,7 @@
     */
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(139, 139, 139); ; 
+    background: rgb(173, 173, 173); ; 
     border-radius: 10px;
   }
   
@@ -247,7 +247,7 @@ input[type=number] {
     background: #E2E2E4;
     border-radius: 10px 0 0 10px ;
     padding: 13px 30px;
-    min-width: 100px;
+    min-width: 120px;
     color: #000;
     text-decoration: none;
     border-bottom: 5px solid #444773;
