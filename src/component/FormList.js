@@ -50,6 +50,7 @@ const FormList = () => {
     const clearAll = () =>{
         setListname([])
         setAllList([])
+        setInput(prv=>{return{...prv,payerId:'',payerName:''}})
     }
     const delName = () =>{ 
         setAllList(current => current.filter(list=>{
