@@ -7,8 +7,6 @@ const ShowList = (props) => {
     const delList = (id) =>{
         props.removeList(id)
     }
-    // const Total = lists.reduce((prv,curr) => prv.amount + curr.amount)
-    
     let Total = 0
     for (let list of lists){Total += list.amount}
    

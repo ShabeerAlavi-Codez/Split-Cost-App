@@ -13,17 +13,18 @@
     color: #ffffff;
     text-align: left;
     border-radius: 10px;
-    
+    font-size: 1.3vw;
 }
 
 .wrap-alllist .head-table th,
 .wrap-alllist .head-table td {
     padding: 12px 15px;
-
+    font-size: 1.3vw;
 }
 
 .head-table tbody tr{
     border-bottom: 1px solid #dddddd;
+    
 }
 
 .head-table tbody tr:nth-of-type(even) {
@@ -47,7 +48,7 @@
     width: 25%;
 }
 .col-remove{
-    width: 15%;
+    width: 10%;
     
 }
 .wrapTotal{
@@ -67,3 +68,4 @@
     border-radius: 10px;
     padding: 15px 30px;
 }
+

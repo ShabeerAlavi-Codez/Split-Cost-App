@@ -1,7 +1,7 @@
 import React, { useEffect , useState ,useRef} from 'react'
 import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
-import { faXmark, faPlus} from "@fortawesome/free-solid-svg-icons";
+import { faXmark, faPlus, faArrowsLeftRight} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import ShowList from './ShowList'
 import ShowPayer from './ShowPayer';
@@ -19,7 +19,7 @@ const FormList = () => {
     const [listName, setListname] = useState([])
     const [btnStatus,setDisable] = useState(true)
     const [cfirmPop,setcfirmPop] = useState(false)
-
+    const [toggleRight,setToggleRight] = useState(true)
     let removePerson = useRef('');
 
     const handleSubmitform = (e) =>{
@@ -68,7 +68,17 @@ const FormList = () => {
             return list.id !== id;
         }))
     }
-
+    
+    const toggletab = () =>{
+        const displaysec = document.getElementById("display-sec");
+        setToggleRight(!toggleRight)
+        if(toggleRight){
+            displaysec.style.left = "5%"
+        }else{
+            displaysec.style.left = "95%"
+        }
+        
+    }
     useEffect(()=>{
         if((input.list !== '') && (input.amount !== '' && input.amount > 0 ) && (input.payerName !== "")){
             setDisable(false)
@@ -136,9 +146,11 @@ const FormList = () => {
 
                 <input className='btn-Addlist' type="submit" value={"ADD NEW LIST"} disabled={btnStatus}/>
             </form>
+            
             <Confirm cfirmPop={cfirmPop} onClose={()=>setcfirmPop(false)}  onConfirm={() => delName()}/>     
         </div>
-        <div className='wrap-right'>
+        <div id="display-sec" className='wrap-right'>
+        <FontAwesomeIcon className='tab-icon' onClick={toggletab} icon={faArrowsLeftRight}/>
             <Router>
                 <nav>
                     <NavLink className='link' to="/">All List</NavLink>
