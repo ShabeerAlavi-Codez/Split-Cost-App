@@ -29,6 +29,10 @@ I dropped my app on Netlify. you can visit here: [SplitTheCost](https://splitcos
 
 	![splitCost-pic-6](https://user-images.githubusercontent.com/104776445/189328980-10b50b90-e30f-40b1-9a1c-bd14350bec8c.png)
 
+- When you want to remove a member you can click x icon who you want to remove. Then a pop-up will appear to confirm your decision. Because Expenses added by that member will also be deleted.
+- and if you lazy to remove them one by one.The "Clear All" button in the last items will remove members all.
+
+	![image](https://user-images.githubusercontent.com/104776445/189342539-d9f11886-b13d-4068-becc-b5d7ce3f6f28.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
