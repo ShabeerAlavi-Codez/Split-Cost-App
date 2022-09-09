@@ -111,7 +111,7 @@ const FormList = () => {
                     onChange={(e) => setInput(prv=>{return{...prv,amount:+e.target.value}})}/>
                 </label>
                 <label>
-                    <p>CHOOSE PAYER</p>
+                    <p>CHOOSE A PAYER</p>
                     <div className='wrap-input'>
                         <div className='wrap-addname-input'>
                             <input type="text"
