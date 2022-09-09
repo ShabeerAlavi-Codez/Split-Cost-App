@@ -12,25 +12,25 @@ Built using:
 I dropped my app on Netlify. you can visit here: [SplitTheCost](https://splitcost.netlify.app/)
 
 - You must add your friends or who paid first.
-	type one name in "Add Name" input and click + button or Press Enter.
+	type one name in *Add Name* input and click `+` button or Press Enter.
 
 	![splitCost-pic-3](https://user-images.githubusercontent.com/104776445/189326900-696c1e41-f562-4933-b539-e22087b79f21.png)
 
 
-- Add the List of Expenses. you must add the name of the list, the amount of these Expenses, and Choose a member who paid this list in the lists of members that you just added. You can then click the "Add New List" button after you have completed the form.
+- Add the List of Expenses. you must add the name of the list, the amount of these Expenses, and Choose a member who paid this list in the lists of members that you just added. You can then click the `Add New List`  button after you have completed the form.
 
 	![splitCost-pic-4](https://user-images.githubusercontent.com/104776445/189327342-bf8dd927-793e-46cf-9f0b-de56f6813460.png)
 
-- In "All List" tab shows all lists that you just add. you can remove the list of what you want in the trash icon.
+- In **All List** tab shows all lists that you just add. you can remove the list of what you want in the trash icon.
 
 	![splitCost-pic-5](https://user-images.githubusercontent.com/104776445/189328972-6708edc0-ebdf-4661-9f8f-146446ff8ec6.png)
 
-- In "Members" tab shows all members that you add in "Choose a payer" input. Each person will show how much they have paid and how much is missing or too much with indication help you easy to understand. on above Lists will show the total Expenses, amount of members, and average per person.
+- In **Members** tab shows all members that you add in *Choose a payer* input. Each person will show how much they have paid and how much is missing or too much with indication help you easy to understand. on above Lists will show the total Expenses, amount of members, and average per person.
 
 	![splitCost-pic-6](https://user-images.githubusercontent.com/104776445/189328980-10b50b90-e30f-40b1-9a1c-bd14350bec8c.png)
 
 - When you want to remove a member you can click x icon who you want to remove. Then a pop-up will appear to confirm your decision. Because Expenses added by that member will also be deleted.
-- and if you lazy to remove them one by one.The "Clear All" button in the last items will remove members all.
+- and if you lazy to remove them one by one.The `Clear All` button in the last items will remove members all.
 
 	![image](https://user-images.githubusercontent.com/104776445/189342539-d9f11886-b13d-4068-becc-b5d7ce3f6f28.png)
 # Getting Started with Create React App
