@@ -1,12 +1,10 @@
 .wrap-payerList{
-    /* border: 1px solid #232323; */
     width: 100%;
-    /* min-width: 700px; */
     max-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .wrap-payerList header{
@@ -47,6 +45,7 @@
     border-collapse: collapse;
     box-shadow: 5px -3px 10px rgba(0, 0, 0, 0.1);
     overflow-y: scroll;
+
 }
 
 .wrap-payerList .head-table thead tr{
@@ -131,7 +130,7 @@
 }
 
 .nofriend{
-    margin-top: 30px;
+    margin: 30px auto;
     font-size: 20px;
     font-weight: 500;
     width: 100%;
@@ -151,11 +150,11 @@
     }
     .wrap-payerList .head-table{
         width: 400px;
-        overflow-x: scroll;
     }
     .wrap-payerList .head-table th,
     .wrap-payerList .head-table td {
         font-size: 13px;
+        
     }
 
     .col-mem{
@@ -178,5 +177,8 @@
         width: 45px;
         text-align: center;
         font-size: 9px;
+    }
+    .nofriend{
+        font-size: 16px;
     }
 }

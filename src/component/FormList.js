@@ -60,7 +60,6 @@ const FormList = () => {
             return list.id !== removePerson.current;
         }))
         setInput(prv=>{return{...prv,payerName:''}})
-        // removePerson.current = '';
         setcfirmPop(false)
     }
 
