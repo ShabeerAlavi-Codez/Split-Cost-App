@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap');
 body{
   height: 100vh;
-
 }
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
 }
 
 .App {
