@@ -28,7 +28,7 @@ const ShowList = (props) => {
                     <td className='list-item'>{list.list.substring(0, 30)}</td>
                     <td className='name-item'>{list.payerName.substring(0, 30)}</td>
                     <td className='amount-td'>{list.amount}</td>
-                    <td><FontAwesomeIcon  className='x-icon' icon={faTrashCan} onClick={()=>delList(list.id)}/></td>
+                    <td><FontAwesomeIcon  className='Trashcan-icon' icon={faTrashCan} onClick={()=>delList(list.id)}/></td>
                 </tr>
                 )}
         </tbody>

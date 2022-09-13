@@ -6,9 +6,6 @@ const Confirm = (props) => {
 
     const cfirmPop = props.cfirmPop
     if (!cfirmPop) return null
-    // const onRemove = () =>{
-        
-    // }
   return (
     <div className='confirmPopup'>
         <div className='wrapPopup'>

@@ -8,7 +8,6 @@ const ShowPayer = (props) => {
     let cost = 0;
     let allcost=0;
     listName = listName.map((name) =>{
-        // allcost += cost
         cost = 0
         let result  = allList.filter(list=> {
             return list.payerId === name.id

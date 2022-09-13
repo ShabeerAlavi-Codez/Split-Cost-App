@@ -107,12 +107,23 @@
 
 .form-list label .wrap-input .btn-add{
     border: none;
-    padding: 2px 5px;
-    border: 1px solid #FFF;
+    width: 30px;
+    height: 30px;
     border-radius: 10px;
     background: none;
     cursor: pointer;
+    line-height: 32px;
+    transition: 0.2s;
+    border: none;
+    outline: none;
 }
+.form-list label .wrap-input .btn-add:active{
+    background: white;
+}
+.form-list label .wrap-input .wrap-addname-input:hover .btn-add{
+    border: 1px solid #FFF; 
+}
+
 .form-list label .wrap-input .btn-add:active{
     transform: translateY(2px);
 }

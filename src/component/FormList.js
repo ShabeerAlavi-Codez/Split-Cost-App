@@ -17,7 +17,7 @@ const FormList = () => {
     const [allLists, setAllList] = useState([])
     const [name,setName] = useState("")
     const [listName, setListname] = useState([])
-    const [btnStatus,setDisable] = useState(true)
+    const [btnStatus,setBtnStatus] = useState(true)
     const [cfirmPop,setcfirmPop] = useState(false)
     const [toggleRight,setToggleRight] = useState(true)
     let removePerson = useRef('');
@@ -81,9 +81,9 @@ const FormList = () => {
     }
     useEffect(()=>{
         if((input.list !== '') && (input.amount !== '' && input.amount > 0 ) && (input.payerName !== "")){
-            setDisable(false)
+            setBtnStatus(false)
         }else{
-            setDisable(true)
+            setBtnStatus(true)
         }
     },[input])
    
@@ -113,37 +113,31 @@ const FormList = () => {
                     <p>CHOOSE A PAYER</p>
                     <div className='wrap-input'>
                         <div className='wrap-addname-input'>
-                            <input type="text"
+                            <label><input type="text"
                             id='add'
                             placeholder='Add Name'
                             value={name} 
                             onChange={(e) =>{setName(e.currentTarget.value)}}
                             className="fill-name"/>
-                            
-                            <button className='btn-add' onClick={handleSubmit}>
-                                <FontAwesomeIcon className='add-icon' onClick={handleSubmit} icon={faPlus} />
-                            </button>         
+                             <button className='btn-add' onClick={handleSubmit}><FontAwesomeIcon className='add-icon' onClick={handleSubmit} icon={faPlus} /> </button>
+                            </label>
                         </div>
                         <ul>
                         {(listName.length !== 0) ? listName.map((list)=> 
                         <li key={list.id}>
                             <input type="radio" id={list.id} name='payer' value={list.name} onChange={handleChangePayer}/>
                             <label className="payeritem" htmlFor={list.id}>
-                                
                                 {list.name.substring(0, 24)}
                                 <FontAwesomeIcon  className='x-icon' onClick={()=>popupconfirm(list.id)} icon={faXmark} />
                             </label>
                         </li>
                         ) 
-                        
                         : <p>You haven't added any your friends yet!</p>}
                         {(listName.length !== 0) && 
                         <li><label className='payeritem clearbtn' onClick={()=>clearAll()}>Clear All</label> </li>}
                         </ul>
                     </div>
-                    
                 </label>
-
                 <input className='btn-Addlist' type="submit" value={"ADD NEW LIST"} disabled={btnStatus}/>
             </form>
             
