@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
 }
 
 .wrap-payerList header{
@@ -41,10 +41,13 @@
 .wrap-payerList .head-table{
     table-layout: fixed;
     width: 100%;
+    max-width: 1;
     white-space: nowrap; 
     border-collapse: collapse;
     box-shadow: 5px -3px 10px rgba(0, 0, 0, 0.1);
     overflow-y: scroll;
+
+    
 
 }
 
@@ -52,18 +55,18 @@
     background-color: #444773;
     color: #ffffff;
     text-align: left;
-    border-radius: 10px;
-    font-size: 1.2vw;
+    font-size: 1rem;
+
 }   
 
 .wrap-payerList .head-table th,
 .wrap-payerList .head-table td {
-    padding: 12px 15px;
+    padding: 10px 15px;
 }
 .head-table tbody tr{
     border-bottom: 1px solid #dddddd;
     transition: 0.1s;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .head-table tbody tr:nth-of-type(even) {
@@ -91,13 +94,15 @@
 .col-paid{
     width: 30%;
 }
-.col-status{
-    width: 10px;
-}
 .col-dept{
-    width: 20%;
-    
+    width: 25%;
 }
+.col-status{
+    width: 15%;
+}
+
+    
+
 .wrap-status{
     border-radius: 15px;
     padding: 2px;
@@ -136,7 +141,15 @@
     width: 100%;
     text-align: center;
 }
-
+@media screen and (max-width:1000px) {
+    .wrap-payerList{
+        overflow-x: scroll;
+        align-items: flex-start
+    }
+    .wrap-payerList .head-table{
+        width: 600px;
+    }
+}
 @media screen and (max-width:500px) {
     .wrap-payerList{
         overflow-x: scroll;

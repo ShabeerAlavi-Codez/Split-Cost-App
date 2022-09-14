@@ -16,7 +16,7 @@ const FormList = () => {
     })
     const [allLists, setAllList] = useState([])
     const [name,setName] = useState("")
-    const [listName, setListname] = useState([])
+    const [nameList, setNameList] = useState([])
     const [btnStatus,setBtnStatus] = useState(true)
     const [cfirmPop,setcfirmPop] = useState(false)
     const [toggleRight,setToggleRight] = useState(true)
@@ -39,8 +39,9 @@ const FormList = () => {
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        (name !== '')  && setListname([{id:uuidv4(),name:name},...listName ])
+        (name !== '')  && setNameList([{id:uuidv4(),name:name},...nameList ])
         setName('')
+    
     }
     const popupconfirm = (id) =>{
         setcfirmPop(true)
@@ -48,7 +49,7 @@ const FormList = () => {
         
     }
     const clearAll = () =>{
-        setListname([])
+        setNameList([])
         setAllList([])
         setInput(prv=>{return{...prv,payerId:'',payerName:''}})
     }
@@ -56,7 +57,7 @@ const FormList = () => {
         setAllList(current => current.filter(list=>{
             return list.payerId !== removePerson.current
         }))
-        setListname(current=>current.filter(list=>{
+        setNameList(current=>current.filter(list=>{
             return list.id !== removePerson.current;
         }))
         setInput(prv=>{return{...prv,payerName:''}})
@@ -123,7 +124,7 @@ const FormList = () => {
                             </label>
                         </div>
                         <ul>
-                        {(listName.length !== 0) ? listName.map((list)=> 
+                        {(nameList.length !== 0) ? nameList.map((list)=> 
                         <li key={list.id}>
                             <input type="radio" id={list.id} name='payer' value={list.name} onChange={handleChangePayer}/>
                             <label className="payeritem" htmlFor={list.id}>
@@ -133,7 +134,7 @@ const FormList = () => {
                         </li>
                         ) 
                         : <p>You haven't added any your friends yet!</p>}
-                        {(listName.length !== 0) && 
+                        {(nameList.length !== 0) && 
                         <li><label className='payeritem clearbtn' onClick={()=>clearAll()}>Clear All</label> </li>}
                         </ul>
                     </div>
@@ -153,7 +154,7 @@ const FormList = () => {
                 <div className='wrap-contain'>
                     <Routes>
                         <Route exact path="/" element={<ShowList removeList={delList} allList={allLists}/>}/>
-                        <Route exact path='/members'element={<ShowPayer allList={allLists} nameList={listName}/>}/>
+                        <Route exact path='/members'element={<ShowPayer allList={allLists} nameList={nameList}/>}/>
                     </Routes>
                 </div>
             </Router>

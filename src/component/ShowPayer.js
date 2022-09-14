@@ -42,8 +42,9 @@ const ShowPayer = (props) => {
                 <tr>
                     <th className='col-mem'>Members</th>
                     <th className='col-paid'>Paid (Baht)</th>
-                    <th className='col-status'></th>
                     <th className='col-dept'>Recv/Pay (Baht)</th>
+                    <th className='col-status'></th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -51,12 +52,13 @@ const ShowPayer = (props) => {
                 <tr key={list.id} >
                     <td className='showname'>{list.name.substring(0, 13)}</td>
                     <td className='showpaid'>{list.paid}</td>
-                    {(list.paid - allcost/listName.length>0) && <td><p className='wrap-status plus'>Overpay</p></td>}
-                    {(list.paid - allcost/listName.length<0) && <td><div className='wrap-status minus'>PayMore</div></td>}
-                    {(list.paid - allcost/listName.length===0) && <td><div className='wrap-status free'>FreeNow</div></td>}
                     {(list.paid - allcost/listName.length>0) && <td className='plusnum'>+{(list.paid - allcost/listName.length).toFixed(2)} </td>}
                     {(list.paid - allcost/listName.length<0) && <td className='minusnum'>{(list.paid - allcost/listName.length).toFixed(2)}</td>}
                     {(list.paid - allcost/listName.length===0) && <td className='freenum'>{(list.paid - allcost/listName.length).toFixed(2)}</td>}
+                    {(list.paid - allcost/listName.length>0) && <td><p className='wrap-status plus'>Overpay</p></td>}
+                    {(list.paid - allcost/listName.length<0) && <td><div className='wrap-status minus'>PayMore</div></td>}
+                    {(list.paid - allcost/listName.length===0) && <td><div className='wrap-status free'>FreeNow</div></td>}
+                    
                 </tr>)
                 :<tr></tr>}       
                 

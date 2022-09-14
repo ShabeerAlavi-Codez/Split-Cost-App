@@ -236,7 +236,6 @@ input[type=number] {
     width: 100%;
     height: 100vh;
     padding: 50px 50px;
-    /* overflow-x: scroll; */
     box-shadow: 5px -3px 30px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
     position: relative;
@@ -300,12 +299,7 @@ input[type=number] {
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
-@media only screen and (min-width: 1024px){
-    .wrap-right{
-        left: 0px;
-    }
 
-}
 @media only screen and (max-width: 768px) {
     .form-Component{
         display: flex;
